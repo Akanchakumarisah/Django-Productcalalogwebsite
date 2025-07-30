@@ -68,20 +68,14 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'ChazeFashion.wsgi.application'
 
-# Database
-# Use MySQL if DATABASE_URL is set, otherwise fallback to SQLite for local dev
+# Database configuration
 
-DATABASES = {   
+DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'chazedb',
-        'USER': 'chazeuser',
-        'PASSWORD': 'abc122',  # same as above
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / "db.sqlite3",
     }
 }
-
 
 # Password validation
 
