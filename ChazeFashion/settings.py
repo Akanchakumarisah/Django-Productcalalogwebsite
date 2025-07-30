@@ -16,11 +16,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-0nlcx_n5$f8p*4bu5c5_@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'django-product-catalog-website.onrender.com',
-    'localhost',
-    '127.0.0.1',
-]
+ALLOWED_HOSTS = ['django-productcalalogwebsite.onrender.com', 'localhost', '127.0.0.1']
+
 
 LOGIN_URL = '/login/'
 
